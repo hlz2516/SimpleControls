@@ -1,0 +1,17 @@
+E:\SimpleControls\SimpleControls\SimpleControls\bin\Debug\net6.0-windows\SimpleControls.deps.json
+E:\SimpleControls\SimpleControls\SimpleControls\bin\Debug\net6.0-windows\SimpleControls.dll
+E:\SimpleControls\SimpleControls\SimpleControls\bin\Debug\net6.0-windows\SimpleControls.pdb
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls.csproj.AssemblyReference.cache
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls_MarkupCompile.cache
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls_MarkupCompile.lref
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\Themes\Generic.baml
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls.g.resources
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls.GeneratedMSBuildEditorConfig.editorconfig
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls.AssemblyInfoInputs.cache
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls.AssemblyInfo.cs
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls.csproj.CoreCompileInputs.cache
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls.dll
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\refint\SimpleControls.dll
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\SimpleControls.pdb
+E:\SimpleControls\SimpleControls\SimpleControls\obj\Debug\net6.0-windows\ref\SimpleControls.dll
