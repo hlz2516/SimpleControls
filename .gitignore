@@ -11,12 +11,7 @@ packages/**/*
 *.userosscache
 *.sln.docstates
  
-# 忽略项目文件
-*.csproj
-*.vbproj
-*.fsproj
-*.targets
-*.props
+# 不忽略项目文件
  
 # 忽略IDE特定的文件和文件夹
 .vs/
@@ -45,3 +40,5 @@ _ReSharper*/
 # 忽略发布文件夹
 publish/
 /SimpleControls/SimpleControls/bin/Debug/net6.0-windows
+/SimpleControls/SimpleControls/obj
+/SimpleControls/WPF_Demo/obj
