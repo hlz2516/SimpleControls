@@ -6,7 +6,47 @@
         xmlns:local="clr-namespace:WPF_Demo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="ToggleButton">
+            <Setter Property="IsChecked" Value="False" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=popup,Path=IsOpen}" Value="True">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="217*"/>
+            <RowDefinition Height="106*"/>
+            <RowDefinition Height="112*"/>
+        </Grid.RowDefinitions>
+        <ToggleButton x:Name="tb" Width="200" Height="60" Margin="300,79,300,78" Checked="tb_Checked" Unchecked="tb_Unchecked" Click="tb_Click" />
+        <Popup x:Name="popup" PlacementTarget="{Binding ElementName=tb}" 
+               Placement="Bottom" AllowsTransparency="True" Focusable="False" StaysOpen="False"
+               IsOpen="{Binding ElementName=tb,Path=IsChecked,Mode=TwoWay}">
+            <ItemsControl x:Name="items">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <CheckBox Content="{Binding}" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Popup>
+        <TextBlock x:Name="txt" Text="测试" Margin="0,217,0,0" Grid.Row="1" />
+        <ComboBox Grid.Row="2" Width="200" Height="30">
+            <ComboBoxItem>
+                <TextBlock Text="123" />
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock Text="456" />
+            </ComboBoxItem>
+        </ComboBox>
     </Grid>
 </Window>

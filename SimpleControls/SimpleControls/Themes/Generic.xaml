@@ -185,7 +185,7 @@
                                   IsHitTestVisible="false" Margin="{TemplateBinding Padding}" 
                                   SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
                                   VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>-->
-            <TextBox x:Name="contentPresenter" Text="{TemplateBinding  SelectedItems,Converter={StaticResource ResourceKey=stringCollectionConverter}}}" />
+            <TextBox x:Name="contentPresenter" Text="{TemplateBinding  SelectedItems,Converter={StaticResource ResourceKey=stringCollectionConverter}}" />
         </Grid>
         <ControlTemplate.Triggers>
             <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
