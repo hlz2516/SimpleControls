@@ -1,6 +1,6 @@
 # 忽略所有的生成文件
-bin/**/*
-obj/**/*
+**/bin/
+**/obj/
  
 # 忽略NuGet下载的包
 packages/**/*
@@ -38,7 +38,4 @@ _ReSharper*/
 *.vs
  
 # 忽略发布文件夹
-publish/
-/SimpleControls/SimpleControls/bin/Debug/net6.0-windows
-/SimpleControls/SimpleControls/obj
-/SimpleControls/WPF_Demo/obj
+**/publish/
