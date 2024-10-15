@@ -16,12 +16,13 @@ namespace SimpleControls
     /// </summary>
     public partial class CheckedComboBox : UserControl
     {
-        private List<string> selectedResult = new List<string>();
-        public char Separator { get; set; } = ',';
+        public List<string> SelectedItems { private set; get; }
+        public string Separator { get; set; } = "，";
 
         public CheckedComboBox()
         {
             InitializeComponent();
+            SelectedItems = new List<string>();
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
@@ -31,9 +32,9 @@ namespace SimpleControls
             if (chk.Content != null)
             {
                 string text = chk.Content.ToString();
-                if (!selectedResult.Contains(text))
+                if (!SelectedItems.Contains(text))
                 {
-                    selectedResult.Add(text);
+                    SelectedItems.Add(text);
                 }
                 UpdateResult();
             }
@@ -46,9 +47,9 @@ namespace SimpleControls
             if (chk.Content != null)
             {
                 string text = chk.Content.ToString();
-                if (selectedResult.Contains(text))
+                if (SelectedItems.Contains(text))
                 {
-                    selectedResult.Remove(text);
+                    SelectedItems.Remove(text);
                 }
                 UpdateResult();
             }
@@ -56,7 +57,7 @@ namespace SimpleControls
 
         private void UpdateResult()
         {
-            tb.Content = string.Join(Separator, selectedResult);
+            tb.Content = string.Join(Separator, SelectedItems);
         }
 
         private void CheckBox_MouseMove(object sender, MouseEventArgs e)
